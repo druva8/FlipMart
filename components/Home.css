@@ -1,0 +1,116 @@
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 1900px;
+  margin: 0 auto;
+  padding: 0 40px; /* Space for arrow buttons */
+  background-color: #fff; /* White background */
+  border: 1px solid #d1d5db; /* Gray border */
+  border-radius: 0.5rem;
+  /* Optional: rounded corners for better aesthetics */
+}
+
+.carousel-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 25%; /* Show 4 items on large screens */
+  padding: 0.5rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  box-shadow: #333 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0.5rem;
+  background-color: rgba(200, 200, 200, 0.8);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.2s;
+}
+
+.carousel-button:hover {
+  background-color: rgba(150, 150, 150, 0.8);
+}
+
+.carousel-button.left {
+  left: 0;
+}
+
+.carousel-button.right {
+  right: 0;
+}
+
+.carousel-button svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  stroke: currentColor;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel-item {
+    flex: 0 0 50%; /* Show 2 items on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-item {
+    flex: 0 0 100%; /* Show 1 item on small screens */
+  }
+  .carousel-wrapper {
+    padding: 0 20px; /* Adjust padding for smaller screens */
+  }
+  .carousel-button {
+    padding: 0.3rem;
+  }
+
+  .carousel-button svg {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}
+
+/* Ensure ProductCard borders */
+product-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* New style for banner container */
+.banner-carousel {
+  padding: 4px;
+  height: 500px;
+
+  /* Added padding as requested */
+  border-radius: 0.3rem; /* Rounded corners for the banner */
+}
