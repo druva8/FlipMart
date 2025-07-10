@@ -1,0 +1,7 @@
+/*
+  Make sure your build process uses PostCSS with Tailwind CSS plugin.
+  The following lines require Tailwind CSS to be installed and configured.
+*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
