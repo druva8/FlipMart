@@ -1,0 +1,178 @@
+/* 🌄 Image Background for Login Page */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url("public/assets/back.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-color: rgba(0, 0, 0, 0.4); /* Optional overlay */
+  background-blend-mode: overlay;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 📦 Login Box/Card */
+.auth-card {
+  background-color: #dbd8e2fd;
+  padding: 2rem 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* 📝 Title */
+.auth-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* 📋 Form Layout */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* 🎯 Center the form inputs */
+.form-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+/* 👤 Form Group Styling */
+.form-group {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+/* 🔠 Label styling */
+.form-group label {
+  text-align: left;
+  font-size: 0.9rem;
+  color: #444;
+  font-weight: 600;
+}
+
+/* 📦 Input Group Styling */
+.input-with-icon {
+  display: flex;
+  align-items: center;
+  background-color: #f3f4f6;
+  border: 2px solid #667eea; /* Unified bold border for both fields */
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 0 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-icon {
+  font-size: 1.2rem;
+  color: #555;
+  margin-right: 0.5rem;
+}
+
+.toggle-icon {
+  font-size: 1.2rem;
+  color: #555;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding-left: 0.5rem;
+}
+
+/* 🧾 Input field */
+.form-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0.75rem;
+  background: transparent;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* ✅ Login Button */
+.btn-primary {
+  background-color: #667eea;
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #5a67d8;
+}
+
+/* 🟢 Success & ❌ Error Message */
+.message {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #16a34a; /* Green color for success */
+}
+
+.message.error {
+  color: #dc2626; /* Red if you use a separate error class */
+}
+
+/* 🔗 Links (Signup/Forgot) */
+.auth-link {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #444;
+}
+
+.link {
+  background: none;
+  border: none;
+  color: #667eea;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.link:hover {
+  color: #4c51bf;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 1.5rem;
+  }
+
+  .auth-title {
+    font-size: 1.5rem;
+  }
+
+  .form-input {
+    font-size: 0.95rem;
+  }
+
+  .btn-primary {
+    font-size: 0.95rem;
+  }
+}
